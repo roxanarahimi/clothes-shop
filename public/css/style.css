@@ -1,0 +1,125 @@
+body, html {
+    max-width: 1535px;
+    margin: 0 auto;
+    font-family: IranSans !important;
+    /*font-size: 30px !important;*/
+    direction: rtl !important;
+    text-align: right !important;
+    scroll-behavior: smooth;
+    background-color: transparent;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: LalezarPlus;
+}
+* {
+    transition: all 0.5s ease !important;
+}
+body {
+
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    cursor: pointer !important;
+    background-color: gray !important;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grery;*/
+    /*border-radius: 10px;*/
+    cursor: pointer !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: dimgray;
+    border-radius: 5px;
+    cursor: pointer !important;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+    cursor: pointer !important;
+
+}
+@media(max-width: 700px) {
+    .nav-item{
+        /*width: max-content !important;*/
+        background-color: black;
+        padding: 5px 0;
+        margin-bottom: 2px;
+        font-weight: bold;
+        color: white;
+        box-shadow: 1px 1px 10px white;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+    ::-webkit-scrollbar {
+        width: 0 !important;
+        background: transparent !important;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: transparent !important;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: transparent !important;
+    }
+}
+
+.colors{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 2px solid rgba(211, 211, 211, 0.49);
+    margin-right: 5px;
+}
+.parallax{
+    width: 100%;
+    height: 400px;
+    background: url("/img/banner.png") fixed top left no-repeat ;
+    background-size: cover;
+}
+.footer1{
+    background-color: black;
+    color: whitesmoke;
+}
+.footer2{
+    background-color: whitesmoke;
+    /*color: #3f2714*/
+    color: black;
+}
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+footer img{
+    /*opacity: 0.7 !important;*/
+}
+
+input:focus {
+    box-shadow: none !important;
+    border: black 1px solid !important;
+}
+
+input:focus .form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label {
+    color: black !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
